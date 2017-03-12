@@ -7,10 +7,14 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 const common = require("./common");
 
-const css = new ExtractTextPlugin("style.css");
+const css = new ExtractTextPlugin("[name].[contentHash].css");
 
 module.exports = merge(common, {
   devtool: "source-map",
+
+  output: {
+    filename: "[name].[chunkHash].js"
+  },
 
   module: {
     rules: [

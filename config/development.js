@@ -9,6 +9,10 @@ const common = require("./common");
 module.exports = merge(common, {
   devtool: "cheap-module-eval-source-map",
 
+  output: {
+    filename: "[name].js"
+  },
+
   module: {
     rules: [
       {
