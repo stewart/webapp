@@ -1,3 +1,10 @@
 import "./index.scss";
 
-console.log("Hello, world!");
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+
+ReactDOM.render(
+  <App/>,
+  document.querySelector("main")
+);

@@ -7,7 +7,10 @@ module.exports = {
   extends: "eslint:recommended",
 
   parserOptions: {
-    sourceType: "module"
+    sourceType: "module",
+    ecmaFeatures: {
+      jsx: true
+    }
   },
 
   rules: {
@@ -42,11 +45,15 @@ module.exports = {
     "semi-spacing": [2, { before: false, after: true }],
     semi: [2, "always"],
     "keyword-spacing": [2, { before: true, after: true }],
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
     "space-before-blocks": [2, "always"],
     "space-before-function-paren": [1, "never"],
     "space-in-parens": [2, "never"],
     "spaced-comment": [2, "always"],
     "valid-jsdoc": 2,
     yoda: [2, "never"],
-  }
+  },
+
+  plugins: [ "react" ]
 };
