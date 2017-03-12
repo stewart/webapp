@@ -7,6 +7,8 @@ const path = require("path");
 let config = {
   entry: "./src/index.js",
 
+  devtool: "cheap-module-eval-source-map",
+
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "build"),
