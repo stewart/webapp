@@ -1,3 +1,5 @@
+/* eslint-env node */
+
 "use strict";
 
 const path = require("path");
@@ -8,6 +10,6 @@ let config = {
     filename: "bundle.js",
     path: path.resolve(__dirname, "build")
   }
-}
+};
 
 module.exports = config;

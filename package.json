@@ -5,9 +5,11 @@
   "author": "Andrew Stewart <andrew@stwrt.ca>",
   "license": "MIT",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "lint": "eslint ./src/**/*.js webpack.config.js"
   },
   "dependencies": {
+    "eslint": "^3.17.1",
     "webpack": "^2.2.1"
   }
 }
