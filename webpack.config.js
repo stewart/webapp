@@ -2,7 +2,7 @@
 
 "use strict";
 
-const path = require("path");
+const path = (...args) => require("path").resolve(__dirname, ...args);
 
 let config = {
   entry: "./src/index.js",
@@ -11,7 +11,7 @@ let config = {
 
   output: {
     filename: "bundle.js",
-    path: path.resolve(__dirname, "build"),
+    path: path("build"),
   },
 
   module: {
