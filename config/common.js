@@ -2,7 +2,7 @@
 
 "use strict";
 
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const path = (...args) => require("path").resolve(__dirname, "..", ...args);
 
@@ -25,7 +25,7 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./index.html"
+      template: "./index.html",
     }),
   ],
 };

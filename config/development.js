@@ -10,7 +10,7 @@ module.exports = merge(common, {
   devtool: "cheap-module-eval-source-map",
 
   output: {
-    filename: "[name].js"
+    filename: "[name].js",
   },
 
   module: {

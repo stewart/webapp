@@ -13,7 +13,7 @@ module.exports = merge(common, {
   devtool: "source-map",
 
   output: {
-    filename: "[name].[chunkHash].js"
+    filename: "[name].[chunkHash].js",
   },
 
   module: {
