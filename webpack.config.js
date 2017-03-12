@@ -2,32 +2,10 @@
 
 "use strict";
 
-const path = (...args) => require("path").resolve(__dirname, ...args);
+const env = process.env.NODE_ENV || "development";
 
-let config = {
-  entry: "./src/index.js",
-
-  devtool: "cheap-module-eval-source-map",
-
-  output: {
-    filename: "bundle.js",
-    path: path("build"),
-  },
-
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: "babel-loader",
-      },
-
-      {
-        test: /\.scss/,
-        use: ["style-loader", "css-loader", "sass-loader"],
-      },
-    ],
-  },
-};
-
-module.exports = config;
+if (["development", "production"].includes(env)) {
+  module.exports = require(`./config/${env}`);
+} else {
+  throw new Error(`Invalid environment: ${env}`);
+}

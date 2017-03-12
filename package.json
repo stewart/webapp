@@ -7,7 +7,7 @@
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack",
-    "lint": "eslint ./src/**/*.js webpack.config.js"
+    "lint": "eslint ./src/**/*.js webpack.config.js ./config/*.js"
   },
   "dependencies": {
     "babel-core": "^6.23.1",
