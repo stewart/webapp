@@ -3,5 +3,8 @@
   "version": "0.0.1",
   "description": "A Web Application",
   "author": "Andrew Stewart <andrew@stwrt.ca>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "webpack": "^2.2.1"
+  }
 }
