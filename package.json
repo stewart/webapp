@@ -8,7 +8,7 @@
     "start": "webpack-dev-server",
     "build": "webpack",
     "build:production": "NODE_ENV=production webpack -p",
-    "lint": "eslint ./src webpack.config.js ./config",
+    "lint": "eslint src webpack.config.js config test",
     "test": "NODE_ENV=test mocha --compilers js:babel-register --recursive"
   },
   "dependencies": {
