@@ -8,7 +8,8 @@
     "start": "webpack-dev-server",
     "build": "webpack",
     "build:production": "NODE_ENV=production webpack -p",
-    "lint": "eslint ./src webpack.config.js ./config"
+    "lint": "eslint ./src webpack.config.js ./config",
+    "test": "NODE_ENV=test mocha --compilers js:babel-register --recursive"
   },
   "dependencies": {
     "babel-core": "^6.23.1",
@@ -29,5 +30,10 @@
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.1",
     "webpack-merge": "^4.0.0"
+  },
+  "devDependencies": {
+    "babel-register": "^6.24.0",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
   }
 }
