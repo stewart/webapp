@@ -1,9 +1,13 @@
 import React from "react";
 
-const App = () => (
-  <div>
-    <h1> Webapp </h1>
-  </div>
-);
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1> Webapp </h1>
+      </div>
+    );
+  }
+}
 
 export default App;
